@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Tour</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="booking-container">
+
+<h1>Tour Booking</h1>
+
+<form id="bookingForm">
+
+<input
+type="text"
+id="customerName"
+placeholder="Your Name"
+required>
+
+<input
+type="text"
+id="packageName"
+readonly>
+
+<input
+type="date"
+id="travelDate"
+required>
+
+<select id="hotel">
+
+<option>Select Hotel</option>
+
+<option>Luxury Hotel</option>
+
+<option>Premium Hotel</option>
+
+<option>Budget Hotel</option>
+
+</select>
+
+<button type="submit">
+Confirm Booking
+</button>
+
+</form>
+
+</div>
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>

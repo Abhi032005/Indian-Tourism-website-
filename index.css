@@ -1,0 +1,364 @@
+/*index*/
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+transition:0.3s;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0d6efd;
+color:white;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+#themeBtn{
+padding:8px 12px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.hero{
+height:90vh;
+background:url("");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.explore-btn{
+padding:15px 30px;
+background:#ff9800;
+border:none;
+color:white;
+font-size:18px;
+cursor:pointer;
+border-radius:5px;
+
+}
+
+.destinations,
+.packages{
+padding:60px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.card-container,
+.package-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card,
+.package{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3,
+.card p,
+.package h3,
+.package p,
+.package span{
+padding:10px;
+}
+
+.package span{
+display:block;
+font-size:20px;
+font-weight:bold;
+color:#0d6efd;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+.dark{
+background:#1e1e1e;
+color:white;
+}
+
+.dark .card,
+.dark .package{
+background:#2c2c2c;
+color:white;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+
+
+/*registration,login*/
+
+
+.auth-container{
+width:400px;
+max-width:90%;
+margin:80px auto;
+padding:30px;
+background:#fff;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.auth-container h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.auth-container input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.auth-container button{
+width:100%;
+padding:12px;
+background:#0d6efd;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.auth-container p{
+text-align:center;
+margin-top:15px;
+}
+
+
+/*destination*/
+
+
+
+.search-section{
+text-align:center;
+padding:30px;
+}
+
+.search-section input{
+width:60%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.destination-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+padding:40px;
+}
+
+.destination-card{
+
+background:white;
+
+padding:15px;
+
+border-radius:10px;
+
+box-shadow:
+0 4px 10px rgba(0,0,0,.1);
+
+text-align:center;
+}
+
+.destination-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:10px;
+}
+
+.destination-card button{
+
+margin-top:10px;
+
+padding:10px 15px;
+
+background:#0d6efd;
+
+border:none;
+
+color:white;
+
+cursor:pointer;
+}
+
+.map-heading{
+text-align:center;
+margin-top:30px;
+}
+
+.map-container{
+padding:30px;
+}
+
+
+/*booking,packages*/
+
+.package-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+padding:40px;
+}
+
+.package-card{
+
+background:white;
+
+padding:25px;
+
+border-radius:10px;
+
+text-align:center;
+
+box-shadow:
+0 4px 10px rgba(0,0,0,.1);
+}
+
+.package-card button{
+
+padding:12px 20px;
+
+background:#0d6efd;
+
+border:none;
+
+color:white;
+
+cursor:pointer;
+
+margin-top:10px;
+}
+
+.booking-container{
+
+width:500px;
+
+max-width:90%;
+
+margin:50px auto;
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+}
+
+.booking-container input,
+.booking-container select{
+
+width:100%;
+
+padding:12px;
+
+margin:10px 0;
+}
+
+.history-card{
+
+background:white;
+
+padding:20px;
+
+margin:15px;
+
+border-radius:10px;
+
+box-shadow:
+0 2px 8px rgba(0,0,0,.1);
+}
